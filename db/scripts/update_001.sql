@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS auto_user
 CREATE TABLE IF NOT EXISTS auto_post
 (
     id SERIAL PRIMARY KEY,
-    txt text,
+    description text,
     created timestamp,
     auto_user_id int references auto_user(id)
 )
